@@ -503,6 +503,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
+  _rb: {fileID: 937962142}
+  _jumpForce: 500
 --- !u!136 &937962137
 CapsuleCollider:
   m_ObjectHideFlags: 0
