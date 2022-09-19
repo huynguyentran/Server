@@ -2,26 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour 
 {
     [SerializeField] private float _speed = 5;
-    [SerializeField] private Rigidbody _rb;
-    [SerializeField] private float _jumpForce = 300;
+    [SerializeField] private float _turnSpeed = 360;
+    private Vector3 _input;
+    [SerializeField] private Rigidbody _rigidBody;
+    [SerializeField] private Transform _model;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private void Update() {
+        GatherInput();
+        Look();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        var vel = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * _speed;
-        vel.y = _rb.velocity.y;
-        _rb.velocity = vel;
+    private void FixedUpdate() {
+        Move();
+    }
 
-        if (Input.GetKeyDown(KeyCode.Space)) _rb.AddForce(Vector3.up* _jumpForce);
+    private void GatherInput() {
+        _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+    }
+
+    private void Look()
+    {
+        if (_input == Vector3.zero) return;
+
+        Quaternion rot = Quaternion.LookRotation(_input.ToIso(), Vector3.up);
+        _model.rotation = Quaternion.RotateTowards(_model.rotation, rot, _turnSpeed * Time.deltaTime);
+    }
+
+    private void Move()
+    {
+        _rigidBody.MovePosition(transform.position + _input.ToIso() * _input.normalized.magnitude * _speed * Time.deltaTime);
     }
 }
+
