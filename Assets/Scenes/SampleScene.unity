@@ -434,7 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerTransform: {fileID: 937962140}
-  SmoothFactor: 0.452
+  SmoothFactor: 1
   LookAtPlayer: 0
 --- !u!1 &832575517
 GameObject:
