@@ -15,10 +15,10 @@ MonoBehaviour:
   name: Test
   dialogue:
   - Hey, What is up?
-  - "NPC talk 1\t"
-  - NPC talk 2
+  - "NPC response to 1\t"
+  - NPC response to  2
   - NPC ending conversation
   playerDialogue:
-  - Response 1
-  - Response 2
+  - Option 1
+  - Option 2
   - End conversation
