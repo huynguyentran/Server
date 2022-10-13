@@ -127,6 +127,18 @@ public class VIDEDemoPlayer : MonoBehaviour
         playerInput.CharacterControls.Disable(); 
     }
 
+    void handleGravity()
+    {
+        if (characterController.isGrounded)
+        {
+            float groundedGravity = -.05f;
+            currentMovement.y = groundedGravity;
+        } else
+        {
+            float gravity = -9.8f;
+            currentMovement.y += gravity;
+        }
+    }
 
     void Update()
     {
@@ -140,6 +152,7 @@ public class VIDEDemoPlayer : MonoBehaviour
             // transform.position = transform.position + currentMovement.ToIso() * currentMovement.normalized.magnitude * _speed * Time.deltaTime;
             //blue.SetFloat("speed", move);
             // characterController.Move(currentMovement * .025f); 
+            handleGravity();
             handleRotation();
             handleAnimation();
             characterController.Move(currentMovement.ToIso() * currentMovement.normalized.magnitude * _speed * Time.deltaTime);
