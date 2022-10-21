@@ -70,9 +70,11 @@ public class VIDEDemoPlayer : MonoBehaviour
         if (animator == null){
             animator = GetComponent<Animator>();
         }
-        
 
-        playerInput.CharacterControls.Move.started += onMovementInput;
+
+
+
+        playerInput.CharacterControls.Move.performed += onMovementInput;
         playerInput.CharacterControls.Move.canceled += onMovementInput;
     }
 
@@ -80,9 +82,9 @@ public class VIDEDemoPlayer : MonoBehaviour
     {
         Vector3 positionToLookAt;
 
-        positionToLookAt.x = currentMovement.x;
+        positionToLookAt.x = currentMovement.ToIso().x;
         positionToLookAt.y = 0.0f;
-        positionToLookAt.z = currentMovement.z;
+        positionToLookAt.z = currentMovement.ToIso().z;
         Quaternion currentRotation = transform.rotation;
 
         if (isMovementPressed)
@@ -95,10 +97,9 @@ public class VIDEDemoPlayer : MonoBehaviour
     void onMovementInput(InputAction.CallbackContext context)
     {
         currentMovementInput = context.ReadValue<Vector2>();
-        currentMovement.x = currentMovementInput.x;
-        currentMovement.z = currentMovementInput.y;
+        currentMovement = new Vector3(currentMovementInput.x, 0, currentMovementInput.y);
         isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
-
+       
     }
 
 
@@ -152,11 +153,12 @@ public class VIDEDemoPlayer : MonoBehaviour
             // transform.position = transform.position + currentMovement.ToIso() * currentMovement.normalized.magnitude * _speed * Time.deltaTime;
             //blue.SetFloat("speed", move);
             // characterController.Move(currentMovement * .025f); 
-            handleGravity();
-            handleRotation();
-            handleAnimation();
             characterController.Move(currentMovement.ToIso() * currentMovement.normalized.magnitude * _speed * Time.deltaTime);
+            handleRotation();
+            handleGravity();
+            handleAnimation();
         }
+        
 
 
         //Interact with NPCs when pressing E
