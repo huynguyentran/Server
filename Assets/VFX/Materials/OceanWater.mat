@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: OceanWater
-  m_Shader: {fileID: -6465566751694194690, guid: 3b7f9b22268fbbd46a8b1d9bba47d59a,
+  m_Shader: {fileID: -6465566751694194690, guid: acf3f47c96bd35f4ea7e4d5fb2d5fb51,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -132,6 +132,7 @@ Material:
     - _DarkFoamColor: {r: 0.33029017, g: 0.4423529, b: 0.752, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LightFoamColor: {r: 1, g: 1, b: 1, a: 0}
+    - _PanningSpeed: {r: 0, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _WaterColor: {r: 0.43921566, g: 0.5854286, b: 1, a: 0}
   m_BuildTextureStacks: []
