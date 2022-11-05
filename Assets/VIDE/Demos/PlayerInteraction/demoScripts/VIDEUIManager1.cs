@@ -1,4 +1,10 @@
-﻿/*
+﻿/* This class is a script that handles the dialogue interface, and it uses the VD class to load
+dialogues and retrieve node data. */
+/* This class is a script that handles the dialogue interface, and it uses the VD class to load
+dialogues and retrieve node data. */
+/* This class is a script that handles the dialogue interface, and it uses the VD class to load
+dialogues and retrieve node data. */
+/*
  *  This is script is only meant to be demonstrate various ways of handling data to create a Dialogue/UI Manager
  *  VIDE doesn't focus on the actual interface, but rather on the system and the data handling
  *  This script is basically handling the node data from nodeData in its own, customized way
@@ -13,6 +19,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using VIDE_Data; //<--- Import to use easily call VD class
+using System;
+using System.Runtime.InteropServices;
 
 public class VIDEUIManager1 : MonoBehaviour
 {
@@ -44,6 +52,8 @@ public class VIDEUIManager1 : MonoBehaviour
     //We'll be using this to store references of the current player choices
     private List<Text> currentChoices = new List<Text>();
 
+    private int SwainQuestEnd = 0;
+    
     //With this we can start a coroutine and stop it. Used to animate text
     IEnumerator NPC_TextAnimator;
 
@@ -302,8 +312,11 @@ public class VIDEUIManager1 : MonoBehaviour
             //If there's an 'item' key, then we will assume there's also an 'itemLine' key and use it
             if (!data.isPlayer)
             {
+             
                 if (data.extraVars.ContainsKey("item") && !data.dirty)
                 {
+                
+
                     if (data.commentIndex == (int)data.extraVars["itemLine"])
                     {
                         if (data.extraVars.ContainsKey("item++")) //If we have this key, we use it to increment the value of 'item' by 'item++'
@@ -327,6 +340,16 @@ public class VIDEUIManager1 : MonoBehaviour
                             GiveItem((int)data.extraVars["item"]);
                             return true;
                         }
+
+                      
+                    }
+                }
+
+                if (VD.assigned.alias == "NPCSwan")
+                {
+                    if (data.extraVars.ContainsKey("swainFailed") && !data.dirty)
+                    {
+                        SwainQuestEnd = 1;
                     }
                 }
             }
@@ -345,6 +368,7 @@ public class VIDEUIManager1 : MonoBehaviour
                     }
                 }
 
+
             }
         } else //Stuff we do right before the dialogue begins
         {
@@ -354,6 +378,47 @@ public class VIDEUIManager1 : MonoBehaviour
                 if (player.demo_ItemInventory.Count > 0 && dialogue.overrideStartNode == -1)
                 {
                     dialogue.overrideStartNode = 16;
+                    return false;
+                }
+            }
+
+
+            if(dialogue.alias == "NPCCat")
+            {
+                if (player.demo_ItemInventory.Count > 0 ){
+                    if( player.demo_ItemInventory.Contains(player.demo_Items[5]) && player.demo_ItemInventory.Contains(player.demo_Items[6])  && player.demo_ItemInventory.Contains(player.demo_Items[7])  )
+                {
+                    dialogue.overrideStartNode = 9;
+                    return false;
+                }
+                else{
+                    dialogue.overrideStartNode = 17;
+                    return false;
+                }
+                }
+                
+            }
+
+            if (dialogue.alias == "NPCSwan"){
+                int node =0 ;
+                 if( player.demo_ItemInventory.Contains(player.demo_Items[8]) && player.demo_ItemInventory.Contains(player.demo_Items[9])  )
+                {
+                    node = 6;
+                   
+                }
+                else if (player.demo_ItemInventory.Contains(player.demo_Items[8]) && !player.demo_ItemInventory.Contains(player.demo_Items[9])  )
+                {
+                    node = 21;
+         
+                }
+                else if (!player.demo_ItemInventory.Contains(player.demo_Items[8]) && player.demo_ItemInventory.Contains(player.demo_Items[9])  ){
+                     node = 17;
+
+                }
+                
+             
+                if (SwainQuestEnd == 0 && node != 0){
+                    dialogue.overrideStartNode =node;
                     return false;
                 }
             }
