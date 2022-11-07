@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Waterfall
-  m_Shader: {fileID: -6465566751694194690, guid: e5e4d23519f48704ca6e61175c01562c,
+  m_Shader: {fileID: -6465566751694194690, guid: fef50a1e7c44349459cde4844e1578e9,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -70,19 +70,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_2d80868e8c594e3fa21a40793652a9f0_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 1e70a96bc9bf27b479a555c9be4171a6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_8f4255377802443a847e59222e97f038_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 1e70a96bc9bf27b479a555c9be4171a6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_bfa3ccd4e9bb482f956698209dee8fca_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 1e70a96bc9bf27b479a555c9be4171a6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_d961876a64cb4746aad6f25a449336b6_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 7ff9fa627a1ad56419995718517575b7, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:

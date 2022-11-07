@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Canal
-  m_Shader: {fileID: -6465566751694194690, guid: b045fc33bafd7a941a9c850c467fc95f,
+  m_Shader: {fileID: -6465566751694194690, guid: 2a070332a800dd749a39ca652ed386a0,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -83,15 +83,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_2d80868e8c594e3fa21a40793652a9f0_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 1e70a96bc9bf27b479a555c9be4171a6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_8f4255377802443a847e59222e97f038_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 1e70a96bc9bf27b479a555c9be4171a6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_bfa3ccd4e9bb482f956698209dee8fca_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 1e70a96bc9bf27b479a555c9be4171a6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:

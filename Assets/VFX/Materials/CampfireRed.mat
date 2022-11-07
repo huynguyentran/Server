@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CampfireRed
-  m_Shader: {fileID: -6465566751694194690, guid: 603b95a2e5b8c93469c8fc8b66dd2e8e,
+  m_Shader: {fileID: -6465566751694194690, guid: c318814ea93fdb44c9df0086d2c2bab3,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -62,7 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_82a50f4e153e410db084bff2b1b596e1_Texture_1:
-        m_Texture: {fileID: 2800000, guid: a86212ff49dcb13439c21fc8eeed8001, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_8eb50d302dbd48eeb1563312a93a6080_Texture_1:
