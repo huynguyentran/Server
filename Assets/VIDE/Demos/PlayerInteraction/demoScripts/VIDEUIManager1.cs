@@ -53,6 +53,12 @@ public class VIDEUIManager1 : MonoBehaviour
     private List<Text> currentChoices = new List<Text>();
 
     private int SwainQuestEnd = 0;
+    private int CatQuestEnd =0;
+    private int SheepQuestEnd = 0;
+    private int talkedSheep = 0;
+    private int talkedLion = 0;
+    private int lionMet = 0;
+    
     
     //With this we can start a coroutine and stop it. Used to animate text
     IEnumerator NPC_TextAnimator;
@@ -347,11 +353,41 @@ public class VIDEUIManager1 : MonoBehaviour
 
                 if (VD.assigned.alias == "NPCSwan")
                 {
-                    if (data.extraVars.ContainsKey("swainFailed") && !data.dirty)
+                    if (data.extraVars.ContainsKey("swainEnd") && !data.dirty)
                     {
                         SwainQuestEnd = 1;
                     }
                 }
+
+                if (VD.assigned.alias == "NPCCat")
+                {
+                    if (data.extraVars.ContainsKey("catEnd") && !data.dirty)
+                    {
+                        CatQuestEnd = 1;
+                    }
+                }
+
+                 if (VD.assigned.alias == "NPCSheep")
+                {
+                    if (data.extraVars.ContainsKey("sheepEnd") && !data.dirty)
+                    {
+                        SheepQuestEnd = 1;
+                    }
+                     if (data.extraVars.ContainsKey("talkedSheep") && !data.dirty)
+                    {
+                        talkedSheep = 1;
+                    }
+                }
+
+                 if (VD.assigned.alias == "NPCLion")
+                {
+                   if (data.extraVars.ContainsKey("talkedLion") && !data.dirty)
+                    {
+                        talkedLion = 1;
+                    }
+                }
+
+
             }
             else
             {
@@ -385,18 +421,27 @@ public class VIDEUIManager1 : MonoBehaviour
 
             if(dialogue.alias == "NPCCat")
             {
+                int node = 0;
                 if (player.demo_ItemInventory.Count > 0 ){
                     if( player.demo_ItemInventory.Contains(player.demo_Items[5]) && player.demo_ItemInventory.Contains(player.demo_Items[6])  && player.demo_ItemInventory.Contains(player.demo_Items[7])  )
                 {
-                    dialogue.overrideStartNode = 9;
-                    return false;
+                    node = 9;
+                    
                 }
                 else{
-                    dialogue.overrideStartNode = 17;
+                    node = 17;
+                  
+                }
+                }
+                if (CatQuestEnd==1){
+                    dialogue.overrideStartNode = 26;
                     return false;
                 }
-                }
-                
+
+                if (CatQuestEnd == 0 && node != 0){
+                    dialogue.overrideStartNode =node;
+                    return false;
+                }          
             }
 
             if (dialogue.alias == "NPCSwan"){
@@ -421,6 +466,48 @@ public class VIDEUIManager1 : MonoBehaviour
                     dialogue.overrideStartNode =node;
                     return false;
                 }
+            }
+
+
+            if (dialogue.alias == "NPCSheep"){
+                int node =0 ;
+                 if(talkedLion == 1)
+                {
+                    node = 9;
+                   
+                }
+                if(CatQuestEnd == 1 && SheepQuestEnd ==1){
+                    node =14;
+                }
+                 if(CatQuestEnd != 1 && SheepQuestEnd ==1){
+                    node =15;
+                }
+                
+                if (node != 0){
+                     dialogue.overrideStartNode =node;
+                    return false;    
+                }
+              
+             
+                
+            }
+
+            if (dialogue.alias == "NPCLion"){
+                if (dialogue.overrideStartNode !=0)
+                {
+                    if (talkedLion ==1){
+                    dialogue.overrideStartNode =21;
+                    return false;
+                    }
+                    else
+                    {
+                        if (player.demo_ItemInventory.Contains(player.demo_Items[10]))
+                        {
+                            dialogue.overrideStartNode =14;
+                            return false;
+                        }
+                    }      
+                }     
             }
         }
         return false;
