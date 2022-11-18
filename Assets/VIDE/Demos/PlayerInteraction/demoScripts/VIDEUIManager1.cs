@@ -42,7 +42,7 @@ public class VIDEUIManager1 : MonoBehaviour
     public GameObject playerChoicePrefab;
     public Image playerSprite;
     public Text playerLabel;
-    public AudioSource audioPlayer;
+    public AudioSource audioSource;
 
     bool dialoguePaused = false; //Custom variable to prevent the manager from calling VD.Next
     bool animatingText = false; //Will help us know when text is currently being animated
@@ -287,18 +287,6 @@ public class VIDEUIManager1 : MonoBehaviour
         QuestChartDemo.SaveProgress(); //saves OUR custom game data
     }
 
-    //Recognizes dialogue progression to update voice acting
-    public void DialogueProgression()
-    {
-        if (VD.nodeData.extraVars.ContainsKey("voiceact"))
-        {
-            VD.OnNodeChange += UpdateVoiceActing;
-        }
-        else
-        {
-            VD.Next();
-        }
-    }
 
     void OnDisable()
     {
@@ -311,14 +299,6 @@ public class VIDEUIManager1 : MonoBehaviour
         if (dialogueContainer != null)
         dialogueContainer.SetActive(false);
         VD.EndDialogue();
-    }
-
-    void UpdateVoiceActing(VD.NodeData data)
-    {
-        NPC_Text.text = VD.GetNodeData(0).comments[0];
-        audioPlayer.clip = VD.GetNodeData(0).audios[0];
-        audioPlayer.Play();
-        VD.OnNodeChange -= UpdateVoiceActing;
     }
 
     #endregion
@@ -373,7 +353,13 @@ public class VIDEUIManager1 : MonoBehaviour
                     }
                 }
 
-                if (VD.assigned.alias == "NPCSwan")
+                if (data.audios[data.commentIndex] != null)
+                { 
+                    audioSource.clip = data.audios[data.commentIndex];
+                    audioSource.Play();
+                }
+
+            if (VD.assigned.alias == "NPCSwan")
                 {
                     if (data.extraVars.ContainsKey("swainEnd") && !data.dirty)
                     {
