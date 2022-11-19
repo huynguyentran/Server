@@ -504,7 +504,7 @@ public class VIDEUIManager1 : MonoBehaviour
                 if (dialogue.overrideStartNode !=0)
                 {
                     if (talkedLion ==1){
-                    dialogue.overrideStartNode =21;
+                    dialogue.overrideStartNode =16;
                     return false;
                     }
                     else
@@ -516,6 +516,21 @@ public class VIDEUIManager1 : MonoBehaviour
                         }
                     }      
                 }     
+            }
+
+            //Added by Alex
+            if (dialogue.alias == "NPCUnicorn")
+            {
+                if (SwainQuestEnd == 0 && CatQuestEnd == 0 && SheepQuestEnd == 0 && talkedSheep == 0 && talkedLion ==0 && lionMet == 0)
+                {
+                    dialogue.overrideStartNode = 12;
+                    return false;
+                }
+                else
+                {
+                    dialogue.overrideStartNode = 0;
+                    return false;
+                }
             }
         }
         return false;
