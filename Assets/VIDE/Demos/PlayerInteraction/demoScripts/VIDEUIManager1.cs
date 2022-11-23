@@ -53,7 +53,7 @@ public class VIDEUIManager1 : MonoBehaviour
     //We'll be using this to store references of the current player choices
     private List<Text> currentChoices = new List<Text>();
 
-    private int SwainQuestEnd = 0;
+    private int SwanQuestEnd = 0;
     private int CatQuestEnd =0;
     private int SheepQuestEnd = 0;
     private int talkedSheep = 0;
@@ -361,9 +361,9 @@ public class VIDEUIManager1 : MonoBehaviour
 
             if (VD.assigned.alias == "NPCSwan")
                 {
-                    if (data.extraVars.ContainsKey("swainEnd") && !data.dirty)
+                    if (data.extraVars.ContainsKey("swanEnd") && !data.dirty)
                     {
-                        SwainQuestEnd = 1;
+                        SwanQuestEnd = 1;
                     }
                 }
 
@@ -470,7 +470,7 @@ public class VIDEUIManager1 : MonoBehaviour
                 }
                 
              
-                if (SwainQuestEnd == 0 && node != 0){
+                if (SwanQuestEnd == 0 && node != 0){
                     dialogue.overrideStartNode =node;
                     return false;
                 }
@@ -521,7 +521,7 @@ public class VIDEUIManager1 : MonoBehaviour
             //Added by Alex
             if (dialogue.alias == "NPCUnicorn")
             {
-                if (SwainQuestEnd == 0 && CatQuestEnd == 0 && SheepQuestEnd == 0 && talkedSheep == 0 && talkedLion ==0 && lionMet == 0)
+                if (SwanQuestEnd == 0 && CatQuestEnd == 0 && SheepQuestEnd == 0 && talkedSheep == 0 && talkedLion ==0 && lionMet == 0)
                 {
                     dialogue.overrideStartNode = 12;
                     return false;
