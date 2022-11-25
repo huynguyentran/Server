@@ -193,7 +193,7 @@ public class VIDEDemoPlayer : MonoBehaviour
 
         RaycastHit rHit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out rHit, 2))
+        if (Physics.Raycast(transform.position, transform.forward, out rHit, 3))
         {
             //Lets grab the NPC's VIDE_Assign script, if there's any
             VIDE_Assign assigned;
