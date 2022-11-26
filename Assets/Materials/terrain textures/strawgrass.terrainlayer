@@ -8,7 +8,7 @@ TerrainLayer:
   m_PrefabAsset: {fileID: 0}
   m_Name: strawgrass
   m_DiffuseTexture: {fileID: 2800000, guid: e5073e0b37e95ea41968be1bb80f8507, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: b25096b9b5f9b6b4fa422c1274956fef, type: 3}
+  m_NormalMapTexture: {fileID: 0}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 6, y: 6}
   m_TileOffset: {x: 0, y: 0}
