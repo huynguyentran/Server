@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NewWaterfall
-  m_Shader: {fileID: -6465566751694194690, guid: c2be4a26e2909d6499661270abe29e73,
+  m_Shader: {fileID: -6465566751694194690, guid: 1d58592123d459f40890194812261e71,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -71,6 +71,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_255752f6c130493488ec2c61320d8590_Texture_1:
         m_Texture: {fileID: 2800000, guid: 9f15caeb956d54e4987a0df3a6385508, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_98e3460c30be40c1b9f6613f00bc2461_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4d69e7fa00352f2458c65406ee77ea5d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_9f28b3306c8e456db0167242470ae0bf_Texture_1:
