@@ -59,6 +59,8 @@ public class VIDEUIManager1 : MonoBehaviour
     private int talkedSheep = 0;
     private int talkedLion = 0;
     private int lionMet = 0;
+    private int talkedFrog = 0;
+    private int FrogQuestEnd = 0;
     
     
     //With this we can start a coroutine and stop it. Used to animate text
@@ -395,6 +397,28 @@ public class VIDEUIManager1 : MonoBehaviour
                     }
                 }
 
+                if (VD.assigned.alias == "NPCFrog")
+                {
+                   if (data.extraVars.ContainsKey("talkedFrog") && !data.dirty)
+                    {
+                   
+                        talkedFrog = 1;
+                    }
+                    if (data.extraVars.ContainsKey("frogEnd") && !data.dirty)
+                    {
+                        FrogQuestEnd = 1;
+                    }
+
+                }
+
+                 if (VD.assigned.alias == "NPCUnicorn")
+                {
+                   if (data.extraVars.ContainsKey("quit") && !data.dirty)
+                    {
+                      Application.Quit();
+                    }
+                }
+
 
             }
             else
@@ -422,6 +446,42 @@ public class VIDEUIManager1 : MonoBehaviour
                 if (player.demo_ItemInventory.Count > 0 && dialogue.overrideStartNode == -1)
                 {
                     dialogue.overrideStartNode = 16;
+                    return false;
+                }
+            }
+
+            if (dialogue.alias == "NPCFrog")
+            {
+               
+                if (FrogQuestEnd == 1){
+                     dialogue.overrideStartNode = 5;
+                     return false;
+                }
+
+                if( player.demo_ItemInventory.Contains(player.demo_Items[11]))
+                {
+                    dialogue.overrideStartNode = 3;
+                    return false;
+                }
+
+                if (talkedFrog ==1){
+                    dialogue.overrideStartNode =2;
+                    return false;
+                }      
+                else{
+                     dialogue.overrideStartNode =0;
+                     return false;
+                }
+            }
+
+            if (dialogue.alias =="FrogQuestSign")
+            {
+                if (talkedFrog ==1){
+                    dialogue.overrideStartNode =0;
+                    return false;
+                }
+                else{
+                    dialogue.overrideStartNode =3;
                     return false;
                 }
             }
@@ -521,7 +581,7 @@ public class VIDEUIManager1 : MonoBehaviour
             //Added by Alex
             if (dialogue.alias == "NPCUnicorn")
             {
-                if (SwanQuestEnd == 0 && CatQuestEnd == 0 && SheepQuestEnd == 0 && talkedSheep == 0 && talkedLion ==0 && lionMet == 0)
+                if (SwanQuestEnd == 1 && CatQuestEnd == 1 && SheepQuestEnd == 1 && FrogQuestEnd ==1)
                 {
                     dialogue.overrideStartNode = 12;
                     return false;
