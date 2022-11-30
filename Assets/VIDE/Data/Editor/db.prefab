@@ -44,149 +44,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268dc70b105993846a123be43345df63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileIndex: 14
+  fileIndex: 12
   skinIndex: 0
   loadTag: 
   startID: 0
   curFocusID: 0
-  currentID: 30968
+  currentID: 5585
   autosave: 1
   previewPanning: 0
-  currentDiag: 14
+  currentDiag: 12
   locEdit: 0
   pNodeID: 18
   aNodeID: 2
   S_playerDiags:
-  - commentCount: 9
+  - commentCount: 1
     s_comment:
-    - text: '*The Frog... barks... at you.*'
-      extraData: ExtraData
-      inputSetIndex: 0
-      outputNodeIndex: 1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 301
-        y: 61
-        width: 30
-        height: 22
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: "HEY! YOU! TURQUOISE SHIRT! \n"
-      extraData: fs 30
-      inputSetIndex: 0
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 1
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: "You\u2019ve got some nerve, stepping on my lawn like you own the place!
-        Does \u201Cprivate property\u201D not mean a thing to anyone anymore? You\u2019re
-        probably fresh off the boat from yesterday, aren\u2019t ya?\r"
-      extraData: ExtraData
-      inputSetIndex: 0
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: "\u2026 Though I guess you seem decent enough from lookin\u2019 at ya.
-        But you better watch where you step around here."
-      extraData: ExtraData
-      inputSetIndex: 0
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: "Well, while I\u2019ve got you here, I may as well make you useful! Look
-        here!"
-      extraData: ExtraData
-      inputSetIndex: 0
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: All these signs all over the place... and you know what they're good
-        for? NOTHING! ABSOLUTELY NOTHING!
-      extraData: ExtraData
-      inputSetIndex: 0
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: And what's worse, is they're tools of propoganda! Degeneracy! It's eroding
-        at our sane, peaecful way of life!
-      extraData: ExtraData
-      inputSetIndex: 0
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: That swan and cat think they're so amazing... what they are is an eyesore
-        and a waste of space!
-      extraData: ExtraData
-      inputSetIndex: 0
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: They've left their mark on EVERYTHING good and pure to us!
+    - text: 
       extraData: ExtraData
       inputSetIndex: 0
       outputNodeIndex: -1
@@ -204,412 +77,109 @@ MonoBehaviour:
     ID: 0
     rect:
       serializedVersion: 2
-      x: 320
-      y: -170
+      x: 210
+      y: 190
       width: 348
-      height: 619.6666
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 3
-    s_comment:
-    - text: So, here's what needs to be done. One of those little advertisement signs
-        needs to go.
-      extraData: ExtraData
-      inputSetIndex: 1
-      outputNodeIndex: 4
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 301
-        y: 61
-        width: 30
-        height: 46
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: There was a specific one... what was it again? I think it was one of
-        the swan's. Yeah, that's a good place to start.
-      extraData: ExtraData
-      inputSetIndex: 1
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: So, are you going to prove yourself useful?
-      extraData: ExtraData
-      inputSetIndex: 1
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 1
-    rect:
-      serializedVersion: 2
-      x: 810
-      y: -20
-      width: 348
-      height: 244
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 3
-    s_comment:
-    - text: '*The Frog blows out his cheeks.*'
-      extraData: ExtraData
-      inputSetIndex: 2
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: I KNOW you aren't coming back so soon without finishing what needs to
-        be done...
-      extraData: ExtraData
-      inputSetIndex: 2
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: Footwork, soldier! Get moving!
-      extraData: ExtraData
-      inputSetIndex: 2
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 2
-    rect:
-      serializedVersion: 2
-      x: -80
-      y: 430
-      width: 348
-      height: 195.33333
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 2
-    s_comment:
-    - text: Now THAT'S more like it! I can already feel an aura of calm washing over
-        that area...
-      extraData: ExtraData
-      inputSetIndex: 3
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: '*The Frog ribbits gleefully*'
-      extraData: ExtraData
-      inputSetIndex: 3
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 3
-    rect:
-      serializedVersion: 2
-      x: -50
-      y: 650
-      width: 348
-      height: 284.3333
+      height: 447
     pTag: 
     expand: 1
     sprite: {fileID: 0}
     vars:
-    - 
+    - I heard that someone lives in the mountains... but who would be crazy enough
+      to ever live away from the here and now?
+    - What? Who, me? Why, no, I haven't heard of Twitter, why do you ask?
+    - Have you heard the news about the Buttcoin stock? It crashed to an all time
+      low today... chin up, I'm sure it will make a comeback!
+    - People say this island puts off a "hostile, unwelcoming" aura. Does it really,
+      though? Or are people just looking for problems?
+    - This place is so beautiful..! Though, rather on the small side... The same
+      faces seem to always pop up everywhere you go.
+    - I've only been here on vacation for a short time, but I don't know what I'd
+      do if this place ever sunk into the ocean... you're lucky to have gotten a
+      house here! If you move out, can I have it?
+    - The lingo people use online changes all the time... I'm too afraid to get started
+      on something only to find out it's been out of fashion for days. Days!
+    - That Mayor sure is straightforward! No one seems to really question what he
+      says much... so it must be true, right?
+    - There are just too many stories out there these days that exploit fictional
+      characters. When is the Mayor going to pass a law that gives unreal people
+      real rights?
+    - There's no place quite like this island, that's for sure... I have to keep
+      up with everyone to make sure I don't miss anything important!
     varKeys:
     - Key1
-    isPlayer: 0
-  - commentCount: 2
-    s_comment:
-    - text: It would be my honor (sarcasm)
-      extraData: ExtraData
-      inputSetIndex: 4
-      outputNodeIndex: 6
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 301
-        y: 61
-        width: 30
-        height: 22
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: Dude, you're a nutcase. Seek help. Touch grass.
-      extraData: ExtraData
-      inputSetIndex: 4
-      outputNodeIndex: 7
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 300
-        y: 84
-        width: 30
-        height: 32
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 4
-    rect:
-      serializedVersion: 2
-      x: 1200
-      y: 170
-      width: 348
-      height: 249.66666
-    pTag: 
-    expand: 1
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 1
-  - commentCount: 1
-    s_comment:
-    - text: '[The Frog is humming some kind of anthem]'
-      extraData: ExtraData
-      inputSetIndex: 5
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 5
-    rect:
-      serializedVersion: 2
-      x: -50
-      y: 950
-      width: 348
-      height: 134.66666
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 0
-  - commentCount: 2
-    s_comment:
-    - text: '*The Frog swells with pride.*'
-      extraData: ExtraData
-      inputSetIndex: 6
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: Great! Finally, some common sense around here. I'll be here; I gotta
-        keep an eye on our glorious mayor... make sure no suspicious types get too
-        close to him.
-      extraData: ExtraData
-      inputSetIndex: 6
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 6
-    rect:
-      serializedVersion: 2
-      x: 1730
-      y: 30
-      width: 348
-      height: 328.33334
-    pTag: 
-    expand: 1
-    sprite: {fileID: 0}
-    vars:
-    - 0
-    varKeys:
-    - talkedFrog
-    isPlayer: 0
-  - commentCount: 4
-    s_comment:
-    - text: '*The frog croaks.*'
-      extraData: ExtraData
-      inputSetIndex: 7
-      outputNodeIndex: -1
-      outActionIndex: 0
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 301
-        y: 61
-        width: 30
-        height: 22
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: What!? Why, you no good, sniveling little--
-      extraData: ExtraData
-      inputSetIndex: 7
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: It's our sovereign duty as citizens of this fine land to finform the
-        ignorant, and to oppress-- I mean, dimish the dissident-- the anarchists!
-      extraData: ExtraData
-      inputSetIndex: 7
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: You're a fake and a fraud!
-      extraData: ExtraData
-      inputSetIndex: 7
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 7
-    rect:
-      serializedVersion: 2
-      x: 1730
-      y: 370
-      width: 348
-      height: 257.3333
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
+    - Key2
+    - Key3
+    - Key4
+    - Key5
+    - Key6
+    - Key7
+    - Key8
+    - Key9
+    - Key10
     isPlayer: 0
   S_actionNodes:
   - pauseHere: 0
-    gameObjectName: '[No object]'
-    methodName: '[No method]'
-    nameIndex: 0
-    methodIndex: 0
-    paramIndex: -1
+    gameObjectName: turtle
+    methodName: ModifyText
+    nameIndex: 29
+    methodIndex: 7
+    paramIndex: 0
     opts:
     - '[No method]'
+    - GetAssigned
+    - AssignNew
+    - SaveState
+    - LoadState
+    - OnBeforeSerialize
+    - OnAfterDeserialize
+    - ModifyText
     nameOpts:
     - '[No object]'
+    - CanvasMiniMap
+    - lion
+    - QuestChart
+    - trigger
+    - SignPost (1)
+    - NPC_CrazyCap
+    - swan
+    - orange flower
+    - MusicManager
+    - sheep
+    - hyena 1
+    - blue flower
+    - cat
+    - NPC_Witch
+    - NPC_Couple2
+    - NPC_Couple1
+    - MrCube
+    - frog
+    - Spinned Cube
+    - ConditionGuy
+    - Big Cube
+    - blue_bird 2
+    - horse
+    - ItemsPile
+    - UIMANAGER
+    - CylinderGuy
+    - NPC_Charlie
+    - NPC_Laura
+    - turtle
+    - Cube
     param_bool: 0
     param_string: 
     param_int: 0
     param_float: 0
     rect:
       serializedVersion: 2
-      x: 2220
-      y: 430
+      x: 650
+      y: 270
       width: 200
-      height: 163
-    ID: 8
+      height: 169
+    ID: 1
     outPlayerIndex: -1
     outActionIndex: -1
     more: 1
-    ovrStartNode: 1
+    ovrStartNode: -1
     renameDialogue: 
   S_selNodes: []
