@@ -59,7 +59,7 @@ MonoBehaviour:
   S_playerDiags:
   - commentCount: 1
     s_comment:
-    - text: '[A Sign]'
+    - text: '*A Sign*'
       extraData: ExtraData
       inputSetIndex: 0
       outputNodeIndex: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
     isPlayer: 0
   - commentCount: 1
     s_comment:
-    - text: '[Replace the sign with Frog''s Sign]'
+    - text: '*Replace the sign with Frog''s Sign*'
       extraData: ExtraData
       inputSetIndex: 1
       outputNodeIndex: 2
@@ -153,7 +153,7 @@ MonoBehaviour:
     isPlayer: 0
   - commentCount: 1
     s_comment:
-    - text: '[A Sign]'
+    - text: '*A Sign*'
       extraData: ExtraData
       inputSetIndex: 3
       outputNodeIndex: -1
@@ -183,11 +183,11 @@ MonoBehaviour:
     isPlayer: 0
   S_actionNodes:
   - pauseHere: 0
-    gameObjectName: AdSign (3)
-    methodName: ChangeColor
-    nameIndex: 16
-    methodIndex: 7
-    paramIndex: 3
+    gameObjectName: swanad
+    methodName: GoInvisible
+    nameIndex: 4
+    methodIndex: 8
+    paramIndex: 1
     opts:
     - '[No method]'
     - GetAssigned
@@ -197,41 +197,38 @@ MonoBehaviour:
     - OnBeforeSerialize
     - OnAfterDeserialize
     - ChangeColor
+    - GoInvisible
     nameOpts:
     - '[No object]'
     - CanvasMiniMap
     - lion
     - QuestChart
+    - swanad
     - trigger
+    - SignPost (1)
     - NPC_CrazyCap
     - swan
-    - blue flower
-    - blue flower (1)
-    - orange flower (2)
-    - blue flower (2)
+    - SignPost (4)
+    - orange flower
     - MusicManager
     - sheep
     - hyena 1
+    - blue flower
     - cat
+    - Player
     - NPC_Witch
-    - AdSign (3)
     - NPC_Couple2
+    - MountainSounds
     - NPC_Couple1
     - MrCube
-    - orange flower (1)
     - frog
     - Spinned Cube
     - ConditionGuy
-    - orange flower (4)
     - Big Cube
     - blue_bird 2
-    - blue flower (3)
     - horse
     - ItemsPile
-    - orange flower (3)
     - UIMANAGER
-    - blue flower (4)
-    - orange flower
     - CylinderGuy
     - NPC_Charlie
     - NPC_Laura
