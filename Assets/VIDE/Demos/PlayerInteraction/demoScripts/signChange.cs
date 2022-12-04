@@ -22,18 +22,18 @@ public class signChange : MonoBehaviour {
     //     transform.position += transform.forward * -5;
     // }
 
-    // public void GoInvisible(bool visible)// GO invisible and change override start point
-    // {
-    //     GetComponent<Renderer>().enabled = visible;
+    public void GoInvisible(bool visible)// GO invisible and change override start point
+    {
+        GetComponent<Renderer>().enabled = visible;
 
-    //     if (!visible)
-    //     {
-    //         GetComponent<VIDE_Assign>().overrideStartNode = 10;
-    //     } else
-    //     {
-    //         GetComponent<VIDE_Assign>().overrideStartNode = 0;
-    //     }
-    // }
+        // if (!visible)
+        // {
+        //     GetComponent<VIDE_Assign>().overrideStartNode = 10;
+        // } else
+        // {
+        //     GetComponent<VIDE_Assign>().overrideStartNode = 0;
+        // }
+    }
 
 
 }
