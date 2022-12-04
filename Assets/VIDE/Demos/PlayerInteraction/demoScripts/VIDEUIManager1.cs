@@ -413,7 +413,12 @@ public class VIDEUIManager1 : MonoBehaviour
 
                  if (VD.assigned.alias == "NPCUnicorn")
                 {
-                   if (data.extraVars.ContainsKey("quit") && !data.dirty)
+                    if (data.extraVars.ContainsKey("stay") && !data.dirty)
+                    {
+                        dialogue.overrideStartNode = 11;
+                        return false;
+                    }
+                    if (data.extraVars.ContainsKey("quit") && !data.dirty)
                     {
                       Application.Quit();
                     }
