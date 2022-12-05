@@ -44,118 +44,241 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268dc70b105993846a123be43345df63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileIndex: 7
+  fileIndex: 18
   skinIndex: 0
   loadTag: 
-  startID: 3
-  curFocusID: 3
-  currentID: 84112
+  startID: 0
+  curFocusID: 0
+  currentID: 77878
   autosave: 1
   previewPanning: 0
-  currentDiag: 7
+  currentDiag: 18
   locEdit: 0
   pNodeID: 18
   aNodeID: 2
   S_playerDiags:
-  - commentCount: 1
+  - commentCount: 8
     s_comment:
-    - text: '*A Sign*'
+    - text: '*The Lion waves to you.*'
       extraData: ExtraData
       inputSetIndex: 0
-      outputNodeIndex: 1
+      outputNodeIndex: 10
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 23
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: aa3c7bb423545eb44b3c758ebd84a903, type: 3}
+      visible: 1
+    - text: Good morning! I hope that it was smooth sailing for you overnight on
+        the boat here. It was a pleasure to have you on board.
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: aa3c7bb423545eb44b3c758ebd84a903, type: 3}
+      visible: 1
+    - text: ... One moment, where are my manners? Welcome to [Name yet to be determined],
+        an island full of plenty of... of...
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: fdb00553c97c55540aaf8919311bb424, type: 3}
+      visible: 1
+    - text: ... characters.
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: e8d2820bd29328940ad586ba09312e06, type: 3}
+      visible: 1
+    - text: Funnily enough, I usually only bring people to here; not many seem to
+        ever leave...
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: 45a969b3b415cef4c8e6e1a4c946ae80, type: 3}
+      visible: 1
+    - text: ... Oh, please, forgive my manners. The Sheep is staring at me again...
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: 3a04de90ef8cf9249849b0ee3c97ad27, type: 3}
+      visible: 1
+    - text: ... Actually, this will be a good opportunity for you. Would you mind
+        terribly having a word with the Sheep?
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: e8d2820bd29328940ad586ba09312e06, type: 3}
+      visible: 1
+    - text: I've never had time to speak with her myself, and the staring is really
+        starting to bother me...
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
       outActionIndex: -1
       showmore: 0
       outRect:
         serializedVersion: 2
-        x: 301
-        y: 65
-        width: 30
-        height: 24
+        x: 0
+        y: 0
+        width: 0
+        height: 0
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
     ID: 0
     rect:
       serializedVersion: 2
-      x: -210
-      y: -150
+      x: -150
+      y: -230
       width: 348
-      height: 133
+      height: 773
     pTag: 
-    expand: 0
+    expand: 1
     sprite: {fileID: 0}
     vars: []
     varKeys: []
     isPlayer: 0
-  - commentCount: 1
+  - commentCount: 2
     s_comment:
-    - text: '*Replace the sign with Frog''s Sign*'
+    - text: '*The Lion smiles broadly.*'
       extraData: ExtraData
       inputSetIndex: 1
-      outputNodeIndex: 2
+      outputNodeIndex: -1
+      outActionIndex: 1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 23
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: d8b743fd9a937154fbf1a182c6780b8f, type: 3}
+      visible: 1
+    - text: Oh, thank you so much! I usually just ignore it, but curiosity has been
+        gnawing at me so terribly..!
+      extraData: ExtraData
+      inputSetIndex: 1
+      outputNodeIndex: -1
       outActionIndex: -1
       showmore: 0
       outRect:
         serializedVersion: 2
-        x: 301
-        y: 65
-        width: 30
-        height: 33
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 1
-    rect:
-      serializedVersion: 2
-      x: 290
-      y: -150
-      width: 348
-      height: 141.6
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 1
-  - commentCount: 1
-    s_comment:
-    - text: '[You replace the sign on the board with the Frog''s sign]'
-      extraData: ExtraData
-      inputSetIndex: 2
-      outputNodeIndex: -1
-      outActionIndex: 0
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 301
-        y: 65
-        width: 30
-        height: 33
+        x: 0
+        y: 0
+        width: 0
+        height: 0
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
     ID: 2
     rect:
       serializedVersion: 2
-      x: 780
-      y: -180
+      x: 960
+      y: 0
       width: 348
-      height: 279.6
+      height: 207
     pTag: 
-    expand: 1
+    expand: 0
     sprite: {fileID: 0}
-    vars:
-    - 0
-    - 11
-    varKeys:
-    - itemLine
-    - item
+    vars: []
+    varKeys: []
     isPlayer: 0
-  - commentCount: 1
+  - commentCount: 3
     s_comment:
-    - text: '*A Sign*'
+    - text: '*The Lion sighs.*'
       extraData: ExtraData
-      inputSetIndex: 3
+      inputSetIndex: 2
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: fdb00553c97c55540aaf8919311bb424, type: 3}
+      visible: 1
+    - text: Oh, of course. I understand.
+      extraData: ExtraData
+      inputSetIndex: 2
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: aa3c7bb423545eb44b3c758ebd84a903, type: 3}
+      visible: 1
+    - text: Well, if you don't want to mention me, she might have a better idea of
+        where to direct you next at the very least.
+      extraData: ExtraData
+      inputSetIndex: 2
       outputNodeIndex: -1
       outActionIndex: -1
       showmore: 0
@@ -171,10 +294,452 @@ MonoBehaviour:
     ID: 3
     rect:
       serializedVersion: 2
-      x: -220
-      y: 130
+      x: 1150
+      y: 380
       width: 348
-      height: 133
+      height: 275
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 2
+    s_comment:
+    - text: '*The Lion looks puzzled.*'
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: 4
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 23
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: 3a04de90ef8cf9249849b0ee3c97ad27, type: 3}
+      visible: 1
+    - text: Oh, back so soon? What is it?
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: 4
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 5
+    rect:
+      serializedVersion: 2
+      x: -160
+      y: 630
+      width: 348
+      height: 182
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: I'll talk to the Sheep for you...
+      extraData: ExtraData
+      inputSetIndex: 4
+      outputNodeIndex: 1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 23
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 6
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 390
+      width: 348
+      height: 129
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  - commentCount: 1
+    s_comment:
+    - text: '*The Captain is whistling a little sea shanty*'
+      extraData: ExtraData
+      inputSetIndex: 5
+      outputNodeIndex: 7
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 33
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: e8d2820bd29328940ad586ba09312e06, type: 3}
+      visible: 1
+    ID: 14
+    rect:
+      serializedVersion: 2
+      x: 2170
+      y: 470
+      width: 348
+      height: 168
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: '*The Lion hums to himself cheerily as he checks the state of his boat.*'
+      extraData: ExtraData
+      inputSetIndex: 6
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 16
+    rect:
+      serializedVersion: 2
+      x: 3540
+      y: 1020
+      width: 348
+      height: 154
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: 'I''m just about ready to head back to the mainland: What did you find
+        out from the Sheep?'
+      extraData: ExtraData
+      inputSetIndex: 7
+      outputNodeIndex: 8
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 48
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 17
+    rect:
+      serializedVersion: 2
+      x: 2630
+      y: 480
+      width: 348
+      height: 154
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: '*Offer the meat.*'
+      extraData: ExtraData
+      inputSetIndex: 8
+      outputNodeIndex: 11
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 23
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 18
+    rect:
+      serializedVersion: 2
+      x: 3080
+      y: 480
+      width: 348
+      height: 129
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  - commentCount: 1
+    s_comment:
+    - text: '*The Captain is whistling a little sea shanty*'
+      extraData: ExtraData
+      inputSetIndex: 9
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 20
+    rect:
+      serializedVersion: 2
+      x: 2210
+      y: 290
+      width: 348
+      height: 139
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 2
+    s_comment:
+    - text: Sure!
+      extraData: ExtraData
+      inputSetIndex: 10
+      outputNodeIndex: 1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 23
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: I'm sorta busy...
+      extraData: ExtraData
+      inputSetIndex: 10
+      outputNodeIndex: -1
+      outActionIndex: 0
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 300
+        y: 87
+        width: 30
+        height: 23
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 1
+    rect:
+      serializedVersion: 2
+      x: 400
+      y: 110
+      width: 348
+      height: 153
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  - commentCount: 6
+    s_comment:
+    - text: '*The Lion looks... perplexed.*'
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: -1
+      outActionIndex: 2
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 23
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: 3a04de90ef8cf9249849b0ee3c97ad27, type: 3}
+      visible: 1
+    - text: Is this... an offering of some kind? A gesture of goodwill from the Sheep?
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: 45a969b3b415cef4c8e6e1a4c946ae80, type: 3}
+      visible: 1
+    - text: ... I... appreciate the effort, but... you see... I'm vegan.
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: aa3c7bb423545eb44b3c758ebd84a903, type: 3}
+      visible: 1
+    - text: Yes, it's proven to have wonderful health benefits! The Swan who lives
+        here has recommended it to all her followers.
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: d8b743fd9a937154fbf1a182c6780b8f, type: 3}
+      visible: 1
+    - text: I wake up every morning with the world spinning; she says that's your
+        chakras aligning!
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 1
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 8300000, guid: 3a04de90ef8cf9249849b0ee3c97ad27, type: 3}
+      visible: 1
+    - text: I have to finish my preparations for departure, but could you return
+        to the Sheep and explain things for me? Please make sure she knows I'm very
+        grateful for the kind gesture.
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 19
+    rect:
+      serializedVersion: 2
+      x: 3110
+      y: 700
+      width: 348
+      height: 678
+    pTag: 
+    expand: 1
+    sprite: {fileID: 0}
+    vars:
+    - 0
+    varKeys:
+    - talkedLion
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Comment...
+      extraData: ExtraData
+      inputSetIndex: 12
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 8
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: -420
+      width: 348
+      height: 129
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Comment...
+      extraData: ExtraData
+      inputSetIndex: 13
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 9
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: -400
+      width: 348
+      height: 129
     pTag: 
     expand: 0
     sprite: {fileID: 0}
@@ -183,71 +748,81 @@ MonoBehaviour:
     isPlayer: 0
   S_actionNodes:
   - pauseHere: 0
-    gameObjectName: swanad
-    methodName: GoInvisible
-    nameIndex: 4
-    methodIndex: 8
-    paramIndex: 1
+    gameObjectName: '[No object]'
+    methodName: '[No method]'
+    nameIndex: 0
+    methodIndex: 0
+    paramIndex: -1
     opts:
     - '[No method]'
-    - GetAssigned
-    - AssignNew
-    - SaveState
-    - LoadState
-    - OnBeforeSerialize
-    - OnAfterDeserialize
-    - ChangeColor
-    - GoInvisible
     nameOpts:
     - '[No object]'
-    - CanvasMiniMap
-    - lion
-    - QuestChart
-    - swanad
-    - trigger
-    - SignPost (1)
-    - NPC_CrazyCap
-    - swan
-    - SignPost (4)
-    - orange flower
-    - MusicManager
-    - sheep
-    - hyena 1
-    - blue flower
-    - cat
-    - Player
-    - NPC_Witch
-    - NPC_Couple2
-    - MountainSounds
-    - NPC_Couple1
-    - MrCube
-    - frog
-    - Spinned Cube
-    - ConditionGuy
-    - Big Cube
-    - blue_bird 2
-    - horse
-    - ItemsPile
-    - UIMANAGER
-    - CylinderGuy
-    - NPC_Charlie
-    - NPC_Laura
-    - turtle
-    - Cube
     param_bool: 0
     param_string: 
-    param_int: 4
+    param_int: 0
     param_float: 0
     rect:
       serializedVersion: 2
-      x: 1270
-      y: -130
+      x: 840
+      y: 320
       width: 200
-      height: 194
+      height: 166
     ID: 4
+    outPlayerIndex: 2
+    outActionIndex: -1
+    more: 1
+    ovrStartNode: 5
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: '[No object]'
+    methodName: '[No method]'
+    nameIndex: 0
+    methodIndex: 0
+    paramIndex: -1
+    opts:
+    - '[No method]'
+    nameOpts:
+    - '[No object]'
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    rect:
+      serializedVersion: 2
+      x: 1380
+      y: 20
+      width: 200
+      height: 166
+    ID: 13
     outPlayerIndex: -1
     outActionIndex: -1
-    more: 0
-    ovrStartNode: -1
+    more: 1
+    ovrStartNode: 20
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: '[No object]'
+    methodName: '[No method]'
+    nameIndex: 0
+    methodIndex: 0
+    paramIndex: -1
+    opts:
+    - '[No method]'
+    nameOpts:
+    - '[No object]'
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    rect:
+      serializedVersion: 2
+      x: 3640
+      y: 740
+      width: 200
+      height: 166
+    ID: 7
+    outPlayerIndex: -1
+    outActionIndex: -1
+    more: 1
+    ovrStartNode: 16
     renameDialogue: 
   S_selNodes: []
